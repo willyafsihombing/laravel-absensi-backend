@@ -16,6 +16,11 @@
                     class="nav-link">
                     <i class="fas fa-columns"></i><span>Users</span></a>
             </li>
+            <li class="nav-item">
+                <a href="{{route('companies.show', 1)}}"
+                    class="nav-link">
+                    <i class="fas fa-columns"></i><span>Company</span></a>
+            </li>
         </ul>
     </aside>
 </div>

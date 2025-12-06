@@ -8,7 +8,7 @@
         </div>
         <ul class="sidebar-menu">
             <li class="nav-item">
-                <a href="#"
+                <a href="{{ route('home') }}"
                     class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
             </li>
             <li class="nav-item">
@@ -25,6 +25,11 @@
                 <a href="{{route('attendances.index', 1)}}"
                     class="nav-link">
                     <i class="fas fa-columns"></i><span>Attendance</span></a>
+            </li>
+            <li class="nav-item">
+                <a href="{{route('permissions.index')}}"
+                    class="nav-link">
+                    <i class="fas fa-columns"></i><span>Permission</span></a>
             </li>
         </ul>
     </aside>

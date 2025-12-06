@@ -29,6 +29,8 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
+            'position' => fake()->randomElement(['admin', 'supervisor', 'staff']),
+            'department' => fake()->randomElement(['Flutter Developer', 'Android Developer','Backend Developer','Frontend Developer']),
         ];
     }
 

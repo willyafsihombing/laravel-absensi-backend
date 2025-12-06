@@ -34,7 +34,8 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $this->call([
-            AttendanceSeeder::class
+            AttendanceSeeder::class,
+            PermissionSeeder::class,
         ]);
     }
 }
